@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 
-const COMMODITY_URL = "https://qhqbzrpwjlvfqgtsaozl.supabase.co/functions/v1/commodity-prices"
+const COMMODITY_URL = "https://zjvlghjtlxoecnjbskln.supabase.co/functions/v1/commodity-prices"
 
 export async function GET() {
   const token = process.env.JWT
