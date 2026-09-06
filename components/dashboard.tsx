@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image"
 import { useState } from "react"
 import { Leaf, FlaskConical, CloudSun, LineChart, Sprout, MapPin, Wallet, TrendingUp } from "lucide-react"
 import Link from "next/link"
@@ -87,7 +88,11 @@ export function Dashboard() {
           Price Trends
         </Link>
 
-        <p className="mt-auto pt-6 text-xs text-sidebar-foreground/60">
+        <div className="relative mt-auto h-20 w-full overflow-hidden rounded-xl">
+          <Image src="/sidebar-soil.jpg" alt="" fill sizes="256px" className="object-cover opacity-70" />
+          <div className="absolute inset-0 bg-gradient-to-t from-sidebar via-sidebar/40 to-transparent" />
+        </div>
+        <p className="pt-3 text-xs text-sidebar-foreground/60">
           Demo build with sample data.
         </p>
       </aside>
