@@ -1,15 +1,15 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Bricolage_Grotesque, Nunito_Sans } from 'next/font/google'
+import { Outfit, Inter } from 'next/font/google'
 import './globals.css'
 
-const bricolage = Bricolage_Grotesque({
+const outfit = Outfit({
   subsets: ['latin'],
   variable: '--font-heading',
   display: 'swap',
 })
 
-const nunito = Nunito_Sans({
+const inter = Inter({
   subsets: ['latin'],
   variable: '--font-body',
   display: 'swap',
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light',
-  themeColor: '#2f6690',
+  colorScheme: 'dark',
+  themeColor: '#0f1720',
 }
 
 export default function RootLayout({
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`light bg-background ${bricolage.variable} ${nunito.variable}`}>
+    <html lang="en" className={`dark bg-background ${outfit.variable} ${inter.variable}`}>
       <body className="antialiased font-sans">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
