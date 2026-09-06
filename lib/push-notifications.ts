@@ -1,11 +1,11 @@
 import { getValidSession } from "@/lib/supabase-auth"
 
-const SUPABASE_URL = "https://qhqbzrpwjlvfqgtsaozl.supabase.co"
+const SUPABASE_URL = "https://zjvlghjtlxoecnjbskln.supabase.co"
 const SUPABASE_ANON_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFocWJ6cnB3amx2ZnFndHNhb3psIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU5NDUwMTgsImV4cCI6MjEwMTUyMTAxOH0.vD3_x7-ycJrHS38QmfqccP9_SMY9HL3LIpFlR4hEiTo"
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpqdmxnaGp0bHhvZWNuamJza2xuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2ODUzNTEsImV4cCI6MjEwNDI2MTM1MX0.9Gywe5jvuG3EwUosOjJTcJi5nsASr9BB8vhLVrnVXOU"
 
 // ⚠️ PASTE your Public Key from vapidkeys.com here (between the quotes):
-const VAPID_PUBLIC_KEY = "BGmo64CP3fQ_m-_j4EyyH-JA0Eozsme7_2O2_KDxd58r_JFjIQ4Drkk-7xIBvI8zKhw0ZmM0kfxEz_AEAGsLjKI"
+const VAPID_PUBLIC_KEY = "BJWCIO3zHjUVHhP_lnm3gCiRxHpGXC7_jB1cIbafvMbOAHmJEeLDDW2ALXGNY5jU9kN4Zo0858tGMNURnB_hp4c"
 
 function urlBase64ToUint8Array(base64String: string) {
   const padding = "=".repeat((4 - (base64String.length % 4)) % 4)
