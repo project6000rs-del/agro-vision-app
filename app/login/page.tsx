@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { useRouter } from "next/navigation"
+import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { signInWithEmail, signUpWithEmail, signInWithGoogle } from "@/lib/supabase-auth"
 
@@ -34,8 +35,18 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background px-4">
-      <div className="w-full max-w-sm rounded-2xl border border-border bg-card p-6 shadow-sm">
+    <div className="relative flex min-h-screen items-center justify-center px-4">
+      <Image
+        src="/login-bg.webp"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
+      />
+      <div className="absolute inset-0 bg-background/70" />
+
+      <div className="relative z-10 w-full max-w-sm rounded-2xl border border-border bg-card p-6 shadow-sm">
         <h1 className="mb-1 text-lg font-semibold text-foreground">
           {mode === "signin" ? "Log in to Agro Vision" : "Create your account"}
         </h1>
