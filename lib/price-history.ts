@@ -1,6 +1,6 @@
-const SUPABASE_URL = "https://qhqbzrpwjlvfqgtsaozl.supabase.co"
+const SUPABASE_URL = "https://zjvlghjtlxoecnjbskln.supabase.co"
 const SUPABASE_ANON_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFocWJ6cnB3amx2ZnFndHNhb3psIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODU5NDUwMTgsImV4cCI6MjEwMTUyMTAxOH0.vD3_x7-ycJrHS38QmfqccP9_SMY9HL3LIpFlR4hEiTo"
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InpqdmxnaGp0bHhvZWNuamJza2xuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg2ODUzNTEsImV4cCI6MjEwNDI2MTM1MX0.9Gywe5jvuG3EwUosOjJTcJi5nsASr9BB8vhLVrnVXOU"
 
 export type PricePoint = { date: string; price: number }
 
