@@ -150,7 +150,7 @@ export function Dashboard() {
         </nav>
 
         <main className="flex-1 px-4 py-6 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-5xl">
+          <div key={active} className="mx-auto max-w-5xl animate-in fade-in slide-in-from-bottom-2 duration-500">
             <div className="mb-6">
               <h1 className="font-heading text-2xl font-bold text-foreground text-balance sm:text-3xl">
                 {current.label}
