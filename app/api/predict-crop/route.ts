@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 
-const UPSTREAM_URL = "https://agro-vision-api.onrender.com/predict-crop"
+const UPSTREAM_URL = "https://agro-vision-api-ohby.onrender.com/predict-crop"
 
 // Allow up to ~60s for the upstream service to "wake up" from cold start.
 export const maxDuration = 60
