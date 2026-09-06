@@ -55,6 +55,18 @@ export default function LoginPage() {
           <p className="mt-2 text-sm text-white/80 md:text-base">
             Crop guidance, fertilizer plans, weather alerts, and market prices — built around the land you farm.
           </p>
+
+          <div className="mt-6 flex items-center gap-3 border-t border-white/20 pt-5">
+            <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full ring-1 ring-white/30">
+              <Image src="/testimonials/ravi-kumar.jpg" alt="" fill sizes="40px" className="object-cover" />
+            </div>
+            <div>
+              <p className="text-sm text-white/90">
+                The fertilizer suggestions saved me two trips to the shop this season.
+              </p>
+              <p className="mt-0.5 text-xs text-white/60">Ravi Kumar, cotton farmer — Nagpur</p>
+            </div>
+          </div>
         </div>
       </div>
 
